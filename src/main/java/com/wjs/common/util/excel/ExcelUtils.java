@@ -31,6 +31,8 @@ import org.apache.poi.ss.usermodel.Sheet;
 import org.apache.poi.ss.usermodel.Workbook;
 import org.springframework.util.CollectionUtils;
 
+import com.wjs.common.util.excel.xmlImport.type.IExcelTypeAdapter;
+
 /**
  * 
  * @author liqiang05
@@ -331,13 +333,17 @@ public class ExcelUtils {
 			// 日期格式也是存储
 			if (HSSFDateUtil.isCellDateFormatted(cell)) {// 处理日期格式、时间格式  
 				Date date = cell.getDateCellValue();
-				res = String.valueOf(date.getTime());
+				res = new SimpleDateFormat(IExcelTypeAdapter.DATE_PATTERN).format(date);
+				
+//				res = cell.getStringCellValue();
 			} else if (cell.getCellStyle().getDataFormat() == 58) {
 				// 处理自定义日期格式：m月d日(通过判断单元格的格式id解决，id的值是58)  
 				double value = cell.getNumericCellValue();
-//				Date date = org.apache.poi.ss.usermodel.DateUtil
-//								.getJavaDate(value);
-				res = String.valueOf(value);
+				Date date = org.apache.poi.ss.usermodel.DateUtil
+								.getJavaDate(value);
+				res = new SimpleDateFormat(IExcelTypeAdapter.DATE_PATTERN).format(date);
+				
+//				res = cell.getStringCellValue();
 			} else {
 
 				res = String.valueOf(cell.getNumericCellValue());

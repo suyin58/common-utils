@@ -1,4 +1,4 @@
-package com.wjs.member;
+package com.wjs;
 
 import java.lang.reflect.Proxy;
 

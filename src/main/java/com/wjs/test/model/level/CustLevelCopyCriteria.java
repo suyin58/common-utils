@@ -1,131 +1,132 @@
-package com.wjs.member.model.level;
+package com.wjs.test.model.level;
 
 import java.math.BigDecimal;
 import java.util.ArrayList;
+import java.util.Date;
 import java.util.List;
 
-public class CustLevelCriteria {
+public class CustLevelCopyCriteria {
     /**
-     * cust_level表的操作属性:orderByClause
-     * 创建时间 : 2017-04-13 15:30:44
+     * cust_level_copy表的操作属性:orderByClause
+     * 
      */
     protected String orderByClause;
 
     /**
-     * cust_level表的操作属性:start
-     * 创建时间 : 2017-04-13 15:30:44
+     * cust_level_copy表的操作属性:start
+     * 
      */
     protected int start;
 
     /**
-     * cust_level表的操作属性:limit
-     * 创建时间 : 2017-04-13 15:30:44
+     * cust_level_copy表的操作属性:limit
+     * 
      */
     protected int limit;
 
     /**
-     * cust_level表的操作属性:distinct
-     * 创建时间 : 2017-04-13 15:30:44
+     * cust_level_copy表的操作属性:distinct
+     * 
      */
     protected boolean distinct;
 
     /**
-     * cust_level表的操作属性:oredCriteria
-     * 创建时间 : 2017-04-13 15:30:44
+     * cust_level_copy表的操作属性:oredCriteria
+     * 
      */
     protected List<Criteria> oredCriteria;
 
     /**
-     * cust_level数据表的操作方法: CustLevelCriteria  
-     * 创建时间 : 2017-04-13 15:30:44
+     * cust_level_copy数据表的操作方法: CustLevelCopyCriteria  
+     * 
      */
-    public CustLevelCriteria() {
+    public CustLevelCopyCriteria() {
         oredCriteria = new ArrayList<Criteria>();
     }
 
     /**
-     * cust_level数据表的操作方法: setOrderByClause  
-     * 创建时间 : 2017-04-13 15:30:44
+     * cust_level_copy数据表的操作方法: setOrderByClause  
+     * 
      */
     public void setOrderByClause(String orderByClause) {
         this.orderByClause = orderByClause;
     }
 
     /**
-     * cust_level数据表的操作方法: getOrderByClause  
-     * 创建时间 : 2017-04-13 15:30:44
+     * cust_level_copy数据表的操作方法: getOrderByClause  
+     * 
      */
     public String getOrderByClause() {
         return orderByClause;
     }
 
     /**
-     * cust_level数据表的操作方法: setStart  
-     * 创建时间 : 2017-04-13 15:30:44
+     * cust_level_copy数据表的操作方法: setStart  
+     * 
      */
     public void setStart(int start) {
         this.start = start;
     }
 
     /**
-     * cust_level数据表的操作方法: getStart  
-     * 创建时间 : 2017-04-13 15:30:44
+     * cust_level_copy数据表的操作方法: getStart  
+     * 
      */
     public int getStart() {
         return start;
     }
 
     /**
-     * cust_level数据表的操作方法: setLimit  
-     * 创建时间 : 2017-04-13 15:30:44
+     * cust_level_copy数据表的操作方法: setLimit  
+     * 
      */
     public void setLimit(int limit) {
         this.limit = limit;
     }
 
     /**
-     * cust_level数据表的操作方法: getLimit  
-     * 创建时间 : 2017-04-13 15:30:44
+     * cust_level_copy数据表的操作方法: getLimit  
+     * 
      */
     public int getLimit() {
         return limit;
     }
 
     /**
-     * cust_level数据表的操作方法: setDistinct  
-     * 创建时间 : 2017-04-13 15:30:44
+     * cust_level_copy数据表的操作方法: setDistinct  
+     * 
      */
     public void setDistinct(boolean distinct) {
         this.distinct = distinct;
     }
 
     /**
-     * cust_level数据表的操作方法: isDistinct  
-     * 创建时间 : 2017-04-13 15:30:44
+     * cust_level_copy数据表的操作方法: isDistinct  
+     * 
      */
     public boolean isDistinct() {
         return distinct;
     }
 
     /**
-     * cust_level数据表的操作方法: getOredCriteria  
-     * 创建时间 : 2017-04-13 15:30:44
+     * cust_level_copy数据表的操作方法: getOredCriteria  
+     * 
      */
     public List<Criteria> getOredCriteria() {
         return oredCriteria;
     }
 
     /**
-     * cust_level数据表的操作方法: or  
-     * 创建时间 : 2017-04-13 15:30:44
+     * cust_level_copy数据表的操作方法: or  
+     * 
      */
     public void or(Criteria criteria) {
         oredCriteria.add(criteria);
     }
 
     /**
-     * cust_level数据表的操作方法: or  
-     * 创建时间 : 2017-04-13 15:30:44
+     * cust_level_copy数据表的操作方法: or  
+     * 
      */
     public Criteria or() {
         Criteria criteria = createCriteriaInternal();
@@ -134,8 +135,8 @@ public class CustLevelCriteria {
     }
 
     /**
-     * cust_level数据表的操作方法: createCriteria  
-     * 创建时间 : 2017-04-13 15:30:44
+     * cust_level_copy数据表的操作方法: createCriteria  
+     * 
      */
     public Criteria createCriteria() {
         Criteria criteria = createCriteriaInternal();
@@ -146,8 +147,8 @@ public class CustLevelCriteria {
     }
 
     /**
-     * cust_level数据表的操作方法: createCriteriaInternal  
-     * 创建时间 : 2017-04-13 15:30:44
+     * cust_level_copy数据表的操作方法: createCriteriaInternal  
+     * 
      */
     protected Criteria createCriteriaInternal() {
         Criteria criteria = new Criteria();
@@ -155,8 +156,8 @@ public class CustLevelCriteria {
     }
 
     /**
-     * cust_level数据表的操作方法: clear  
-     * 创建时间 : 2017-04-13 15:30:44
+     * cust_level_copy数据表的操作方法: clear  
+     * 
      */
     public void clear() {
         oredCriteria.clear();
@@ -165,8 +166,8 @@ public class CustLevelCriteria {
     }
 
     /**
-     * cust_level表的操作类
-     * 创建时间 : 2017-04-13 15:30:44
+     * cust_level_copy表的操作类
+     * 
      */
     protected abstract static class GeneratedCriteria {
         protected List<Criterion> criteria;
@@ -469,66 +470,6 @@ public class CustLevelCriteria {
             return (Criteria) this;
         }
 
-        public Criteria andModifyDatetimeIsNull() {
-            addCriterion("modify_datetime is null");
-            return (Criteria) this;
-        }
-
-        public Criteria andModifyDatetimeIsNotNull() {
-            addCriterion("modify_datetime is not null");
-            return (Criteria) this;
-        }
-
-        public Criteria andModifyDatetimeEqualTo(Long value) {
-            addCriterion("modify_datetime =", value, "modifyDatetime");
-            return (Criteria) this;
-        }
-
-        public Criteria andModifyDatetimeNotEqualTo(Long value) {
-            addCriterion("modify_datetime <>", value, "modifyDatetime");
-            return (Criteria) this;
-        }
-
-        public Criteria andModifyDatetimeGreaterThan(Long value) {
-            addCriterion("modify_datetime >", value, "modifyDatetime");
-            return (Criteria) this;
-        }
-
-        public Criteria andModifyDatetimeGreaterThanOrEqualTo(Long value) {
-            addCriterion("modify_datetime >=", value, "modifyDatetime");
-            return (Criteria) this;
-        }
-
-        public Criteria andModifyDatetimeLessThan(Long value) {
-            addCriterion("modify_datetime <", value, "modifyDatetime");
-            return (Criteria) this;
-        }
-
-        public Criteria andModifyDatetimeLessThanOrEqualTo(Long value) {
-            addCriterion("modify_datetime <=", value, "modifyDatetime");
-            return (Criteria) this;
-        }
-
-        public Criteria andModifyDatetimeIn(List<Long> values) {
-            addCriterion("modify_datetime in", values, "modifyDatetime");
-            return (Criteria) this;
-        }
-
-        public Criteria andModifyDatetimeNotIn(List<Long> values) {
-            addCriterion("modify_datetime not in", values, "modifyDatetime");
-            return (Criteria) this;
-        }
-
-        public Criteria andModifyDatetimeBetween(Long value1, Long value2) {
-            addCriterion("modify_datetime between", value1, value2, "modifyDatetime");
-            return (Criteria) this;
-        }
-
-        public Criteria andModifyDatetimeNotBetween(Long value1, Long value2) {
-            addCriterion("modify_datetime not between", value1, value2, "modifyDatetime");
-            return (Criteria) this;
-        }
-
         public Criteria andHoldAmountIsNull() {
             addCriterion("hold_amount is null");
             return (Criteria) this;
@@ -719,320 +660,70 @@ public class CustLevelCriteria {
             return (Criteria) this;
         }
 
-        public Criteria andTxDateIsNull() {
-            addCriterion("tx_date is null");
+        public Criteria andModifyDatetimeIsNull() {
+            addCriterion("modify_datetime is null");
             return (Criteria) this;
         }
 
-        public Criteria andTxDateIsNotNull() {
-            addCriterion("tx_date is not null");
+        public Criteria andModifyDatetimeIsNotNull() {
+            addCriterion("modify_datetime is not null");
             return (Criteria) this;
         }
 
-        public Criteria andTxDateEqualTo(Integer value) {
-            addCriterion("tx_date =", value, "txDate");
+        public Criteria andModifyDatetimeEqualTo(Date value) {
+            addCriterion("modify_datetime =", value, "modifyDatetime");
             return (Criteria) this;
         }
 
-        public Criteria andTxDateNotEqualTo(Integer value) {
-            addCriterion("tx_date <>", value, "txDate");
+        public Criteria andModifyDatetimeNotEqualTo(Date value) {
+            addCriterion("modify_datetime <>", value, "modifyDatetime");
             return (Criteria) this;
         }
 
-        public Criteria andTxDateGreaterThan(Integer value) {
-            addCriterion("tx_date >", value, "txDate");
+        public Criteria andModifyDatetimeGreaterThan(Date value) {
+            addCriterion("modify_datetime >", value, "modifyDatetime");
             return (Criteria) this;
         }
 
-        public Criteria andTxDateGreaterThanOrEqualTo(Integer value) {
-            addCriterion("tx_date >=", value, "txDate");
+        public Criteria andModifyDatetimeGreaterThanOrEqualTo(Date value) {
+            addCriterion("modify_datetime >=", value, "modifyDatetime");
             return (Criteria) this;
         }
 
-        public Criteria andTxDateLessThan(Integer value) {
-            addCriterion("tx_date <", value, "txDate");
+        public Criteria andModifyDatetimeLessThan(Date value) {
+            addCriterion("modify_datetime <", value, "modifyDatetime");
             return (Criteria) this;
         }
 
-        public Criteria andTxDateLessThanOrEqualTo(Integer value) {
-            addCriterion("tx_date <=", value, "txDate");
+        public Criteria andModifyDatetimeLessThanOrEqualTo(Date value) {
+            addCriterion("modify_datetime <=", value, "modifyDatetime");
             return (Criteria) this;
         }
 
-        public Criteria andTxDateIn(List<Integer> values) {
-            addCriterion("tx_date in", values, "txDate");
+        public Criteria andModifyDatetimeIn(List<Date> values) {
+            addCriterion("modify_datetime in", values, "modifyDatetime");
             return (Criteria) this;
         }
 
-        public Criteria andTxDateNotIn(List<Integer> values) {
-            addCriterion("tx_date not in", values, "txDate");
+        public Criteria andModifyDatetimeNotIn(List<Date> values) {
+            addCriterion("modify_datetime not in", values, "modifyDatetime");
             return (Criteria) this;
         }
 
-        public Criteria andTxDateBetween(Integer value1, Integer value2) {
-            addCriterion("tx_date between", value1, value2, "txDate");
+        public Criteria andModifyDatetimeBetween(Date value1, Date value2) {
+            addCriterion("modify_datetime between", value1, value2, "modifyDatetime");
             return (Criteria) this;
         }
 
-        public Criteria andTxDateNotBetween(Integer value1, Integer value2) {
-            addCriterion("tx_date not between", value1, value2, "txDate");
-            return (Criteria) this;
-        }
-
-        public Criteria andLevelTempIdIsNull() {
-            addCriterion("level_temp_id is null");
-            return (Criteria) this;
-        }
-
-        public Criteria andLevelTempIdIsNotNull() {
-            addCriterion("level_temp_id is not null");
-            return (Criteria) this;
-        }
-
-        public Criteria andLevelTempIdEqualTo(Long value) {
-            addCriterion("level_temp_id =", value, "levelTempId");
-            return (Criteria) this;
-        }
-
-        public Criteria andLevelTempIdNotEqualTo(Long value) {
-            addCriterion("level_temp_id <>", value, "levelTempId");
-            return (Criteria) this;
-        }
-
-        public Criteria andLevelTempIdGreaterThan(Long value) {
-            addCriterion("level_temp_id >", value, "levelTempId");
-            return (Criteria) this;
-        }
-
-        public Criteria andLevelTempIdGreaterThanOrEqualTo(Long value) {
-            addCriterion("level_temp_id >=", value, "levelTempId");
-            return (Criteria) this;
-        }
-
-        public Criteria andLevelTempIdLessThan(Long value) {
-            addCriterion("level_temp_id <", value, "levelTempId");
-            return (Criteria) this;
-        }
-
-        public Criteria andLevelTempIdLessThanOrEqualTo(Long value) {
-            addCriterion("level_temp_id <=", value, "levelTempId");
-            return (Criteria) this;
-        }
-
-        public Criteria andLevelTempIdIn(List<Long> values) {
-            addCriterion("level_temp_id in", values, "levelTempId");
-            return (Criteria) this;
-        }
-
-        public Criteria andLevelTempIdNotIn(List<Long> values) {
-            addCriterion("level_temp_id not in", values, "levelTempId");
-            return (Criteria) this;
-        }
-
-        public Criteria andLevelTempIdBetween(Long value1, Long value2) {
-            addCriterion("level_temp_id between", value1, value2, "levelTempId");
-            return (Criteria) this;
-        }
-
-        public Criteria andLevelTempIdNotBetween(Long value1, Long value2) {
-            addCriterion("level_temp_id not between", value1, value2, "levelTempId");
-            return (Criteria) this;
-        }
-
-        public Criteria andLevelTempNameIsNull() {
-            addCriterion("level_temp_name is null");
-            return (Criteria) this;
-        }
-
-        public Criteria andLevelTempNameIsNotNull() {
-            addCriterion("level_temp_name is not null");
-            return (Criteria) this;
-        }
-
-        public Criteria andLevelTempNameEqualTo(String value) {
-            addCriterion("level_temp_name =", value, "levelTempName");
-            return (Criteria) this;
-        }
-
-        public Criteria andLevelTempNameNotEqualTo(String value) {
-            addCriterion("level_temp_name <>", value, "levelTempName");
-            return (Criteria) this;
-        }
-
-        public Criteria andLevelTempNameGreaterThan(String value) {
-            addCriterion("level_temp_name >", value, "levelTempName");
-            return (Criteria) this;
-        }
-
-        public Criteria andLevelTempNameGreaterThanOrEqualTo(String value) {
-            addCriterion("level_temp_name >=", value, "levelTempName");
-            return (Criteria) this;
-        }
-
-        public Criteria andLevelTempNameLessThan(String value) {
-            addCriterion("level_temp_name <", value, "levelTempName");
-            return (Criteria) this;
-        }
-
-        public Criteria andLevelTempNameLessThanOrEqualTo(String value) {
-            addCriterion("level_temp_name <=", value, "levelTempName");
-            return (Criteria) this;
-        }
-
-        public Criteria andLevelTempNameLike(String value) {
-            addCriterion("level_temp_name like", value, "levelTempName");
-            return (Criteria) this;
-        }
-
-        public Criteria andLevelTempNameNotLike(String value) {
-            addCriterion("level_temp_name not like", value, "levelTempName");
-            return (Criteria) this;
-        }
-
-        public Criteria andLevelTempNameIn(List<String> values) {
-            addCriterion("level_temp_name in", values, "levelTempName");
-            return (Criteria) this;
-        }
-
-        public Criteria andLevelTempNameNotIn(List<String> values) {
-            addCriterion("level_temp_name not in", values, "levelTempName");
-            return (Criteria) this;
-        }
-
-        public Criteria andLevelTempNameBetween(String value1, String value2) {
-            addCriterion("level_temp_name between", value1, value2, "levelTempName");
-            return (Criteria) this;
-        }
-
-        public Criteria andLevelTempNameNotBetween(String value1, String value2) {
-            addCriterion("level_temp_name not between", value1, value2, "levelTempName");
-            return (Criteria) this;
-        }
-
-        public Criteria andLevelTempStartDateIsNull() {
-            addCriterion("level_temp_start_date is null");
-            return (Criteria) this;
-        }
-
-        public Criteria andLevelTempStartDateIsNotNull() {
-            addCriterion("level_temp_start_date is not null");
-            return (Criteria) this;
-        }
-
-        public Criteria andLevelTempStartDateEqualTo(Integer value) {
-            addCriterion("level_temp_start_date =", value, "levelTempStartDate");
-            return (Criteria) this;
-        }
-
-        public Criteria andLevelTempStartDateNotEqualTo(Integer value) {
-            addCriterion("level_temp_start_date <>", value, "levelTempStartDate");
-            return (Criteria) this;
-        }
-
-        public Criteria andLevelTempStartDateGreaterThan(Integer value) {
-            addCriterion("level_temp_start_date >", value, "levelTempStartDate");
-            return (Criteria) this;
-        }
-
-        public Criteria andLevelTempStartDateGreaterThanOrEqualTo(Integer value) {
-            addCriterion("level_temp_start_date >=", value, "levelTempStartDate");
-            return (Criteria) this;
-        }
-
-        public Criteria andLevelTempStartDateLessThan(Integer value) {
-            addCriterion("level_temp_start_date <", value, "levelTempStartDate");
-            return (Criteria) this;
-        }
-
-        public Criteria andLevelTempStartDateLessThanOrEqualTo(Integer value) {
-            addCriterion("level_temp_start_date <=", value, "levelTempStartDate");
-            return (Criteria) this;
-        }
-
-        public Criteria andLevelTempStartDateIn(List<Integer> values) {
-            addCriterion("level_temp_start_date in", values, "levelTempStartDate");
-            return (Criteria) this;
-        }
-
-        public Criteria andLevelTempStartDateNotIn(List<Integer> values) {
-            addCriterion("level_temp_start_date not in", values, "levelTempStartDate");
-            return (Criteria) this;
-        }
-
-        public Criteria andLevelTempStartDateBetween(Integer value1, Integer value2) {
-            addCriterion("level_temp_start_date between", value1, value2, "levelTempStartDate");
-            return (Criteria) this;
-        }
-
-        public Criteria andLevelTempStartDateNotBetween(Integer value1, Integer value2) {
-            addCriterion("level_temp_start_date not between", value1, value2, "levelTempStartDate");
-            return (Criteria) this;
-        }
-
-        public Criteria andLevelTempEndDateIsNull() {
-            addCriterion("level_temp_end_date is null");
-            return (Criteria) this;
-        }
-
-        public Criteria andLevelTempEndDateIsNotNull() {
-            addCriterion("level_temp_end_date is not null");
-            return (Criteria) this;
-        }
-
-        public Criteria andLevelTempEndDateEqualTo(Integer value) {
-            addCriterion("level_temp_end_date =", value, "levelTempEndDate");
-            return (Criteria) this;
-        }
-
-        public Criteria andLevelTempEndDateNotEqualTo(Integer value) {
-            addCriterion("level_temp_end_date <>", value, "levelTempEndDate");
-            return (Criteria) this;
-        }
-
-        public Criteria andLevelTempEndDateGreaterThan(Integer value) {
-            addCriterion("level_temp_end_date >", value, "levelTempEndDate");
-            return (Criteria) this;
-        }
-
-        public Criteria andLevelTempEndDateGreaterThanOrEqualTo(Integer value) {
-            addCriterion("level_temp_end_date >=", value, "levelTempEndDate");
-            return (Criteria) this;
-        }
-
-        public Criteria andLevelTempEndDateLessThan(Integer value) {
-            addCriterion("level_temp_end_date <", value, "levelTempEndDate");
-            return (Criteria) this;
-        }
-
-        public Criteria andLevelTempEndDateLessThanOrEqualTo(Integer value) {
-            addCriterion("level_temp_end_date <=", value, "levelTempEndDate");
-            return (Criteria) this;
-        }
-
-        public Criteria andLevelTempEndDateIn(List<Integer> values) {
-            addCriterion("level_temp_end_date in", values, "levelTempEndDate");
-            return (Criteria) this;
-        }
-
-        public Criteria andLevelTempEndDateNotIn(List<Integer> values) {
-            addCriterion("level_temp_end_date not in", values, "levelTempEndDate");
-            return (Criteria) this;
-        }
-
-        public Criteria andLevelTempEndDateBetween(Integer value1, Integer value2) {
-            addCriterion("level_temp_end_date between", value1, value2, "levelTempEndDate");
-            return (Criteria) this;
-        }
-
-        public Criteria andLevelTempEndDateNotBetween(Integer value1, Integer value2) {
-            addCriterion("level_temp_end_date not between", value1, value2, "levelTempEndDate");
+        public Criteria andModifyDatetimeNotBetween(Date value1, Date value2) {
+            addCriterion("modify_datetime not between", value1, value2, "modifyDatetime");
             return (Criteria) this;
         }
     }
 
     /**
-     * cust_level表的操作类
-     * 创建时间 : 2017-04-13 15:30:44
+     * cust_level_copy表的操作类
+     * 
      */
     public static class Criteria extends GeneratedCriteria {
 
@@ -1042,8 +733,8 @@ public class CustLevelCriteria {
     }
 
     /**
-     * cust_level表的操作类
-     * 创建时间 : 2017-04-13 15:30:44
+     * cust_level_copy表的操作类
+     * 
      */
     public static class Criterion {
         private String condition;

@@ -23,8 +23,9 @@
 		</property>
 	</bean>
 
-	<!-- 配置数据源-member -->
-	<bean id="dataSource-member" class="org.apache.commons.dbcp.BasicDataSource">
+	
+	<!-- 配置数据源 -->
+	<bean id="dataSource" class="org.apache.commons.dbcp.BasicDataSource">
 		<property name="driverClassName" value="${jdbc.driverClassName}" />
 		<property name="url" value="${jdbc.url}" />
 		<property name="username" value="${jdbc.username}" />
@@ -33,12 +34,12 @@
 		<property name="maxIdle" value="${jdbc.maxIdle}"></property> 
 		<property name="validationQuery" value="select 1"></property> 
 	</bean>
-	<bean id="sqlSessionFactory-member" class="org.mybatis.spring.SqlSessionFactoryBean">
-		<property name="dataSource" ref="dataSource-member" /> 
+	<bean id="sqlSessionFactory" class="org.mybatis.spring.SqlSessionFactoryBean">
+		<property name="dataSource" ref="dataSource" /> 
 		<property name="mapperLocations">
 			<list>
 				<value>
-					classpath*:com/wjs/member/dao/**/*Mapper.xml
+					classpath*:com/wjs/test/dao/**/*Mapper.xml
 				</value>
 			</list>
 		</property>
@@ -54,15 +55,15 @@
 		</property>
 	</bean>
 	<bean class="org.mybatis.spring.mapper.MapperScannerConfigurer">
-		<property name="basePackage" value="com.wjs.member.dao" />
-		<property name="sqlSessionFactoryBeanName" value="sqlSessionFactory-member" />
+		<property name="basePackage" value="com.wjs.test.dao" />
+		<property name="sqlSessionFactoryBeanName" value="sqlSessionFactory" />
 	</bean>
 
-	<bean id="TransactionManager_member"
+	<bean id="TransactionManager"
 		class="org.springframework.jdbc.datasource.DataSourceTransactionManager">
-		<property name="dataSource" ref="dataSource-member"></property>
+		<property name="dataSource" ref="dataSource"></property>
 	</bean>
-	<tx:annotation-driven transaction-manager="TransactionManager_member"
+	<tx:annotation-driven transaction-manager="TransactionManager"
 		proxy-target-class="true" />
 		
 		

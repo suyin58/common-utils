@@ -96,7 +96,11 @@ public class ExcelXmlImport {
 				Integer col = Integer.valueOf(property.attributeValue("col"));
 				Integer row = Integer.valueOf(property.attributeValue("row"));
 				String name = property.attributeValue("name");
-				String adapter = property.attributeValue("adapter");
+				// 默认取csvAdapter，取不到的情况下取adapter
+				String adapter = property.attributeValue("csvAdapter");
+				if(StringUtils.isEmpty(adapter)){
+					adapter = property.attributeValue("adapter");
+				}
 				String comment = csv.getCellStrValue(row, col);
 				try {
 					PropertyDescriptor pdDest = new PropertyDescriptor(name, claz);
@@ -104,7 +108,8 @@ public class ExcelXmlImport {
 					rM.invoke(obj, getAdapterVal(adapter, comment));
 					
 				} catch (Exception e) {
-					LOGGER.error("属性设置异常:{}", name, e);
+					LOGGER.error("属性设置异常:{}-{}", name, comment, e);
+					throw new BaseException("属性设置异常:" + name+"-"+comment);
 				}
 //				System.out.println("name:" + name +" , val:"+ comment);
 			}
@@ -152,13 +157,18 @@ public class ExcelXmlImport {
 						break;
 					}
 					
-					String adapter = property.attributeValue("adapter");
+					// 默认取csvAdapter，取不到的情况下取adapter
+					String adapter = property.attributeValue("csvAdapter");
+					if(StringUtils.isEmpty(adapter)){
+						adapter = property.attributeValue("adapter");
+					}
 					try {
 						PropertyDescriptor pdDest = new PropertyDescriptor(name, claz);
 						Method rM = pdDest.getWriteMethod();
 						rM.invoke(obj, getAdapterVal(adapter, comment));
 					} catch (Exception e) {
 						LOGGER.error("属性设置异常:{}", name, e);
+						throw new BaseException("属性设置异常:" + name);
 					}
 					
 //					System.out.print( name + ":" + comment +" \t");

@@ -5,6 +5,9 @@
 	<artifactId>common-utils</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>common-utils</name>
+	
+	<!-- 此处用于测试web相关功能，其他项目引用，使用jar的方式 -->
+	<packaging>war</packaging>
 	<description>....</description>
 
 	<properties>

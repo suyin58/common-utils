@@ -1,4 +1,4 @@
-package com.wjs.member.util.excelimport;
+package com.wjs.util.excelimport;
 
 import java.io.File;
 import java.io.FileInputStream;
@@ -12,9 +12,8 @@ import org.junit.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.test.annotation.Rollback;
 
+import com.wjs.BaseTest;
 import com.wjs.common.util.excel.ExcelXmlImport;
-import com.wjs.member.BaseTest;
-import com.wjs.member.dao.level.CustLevelMapper;
 
 /**
  * 将当前目录下的资源文件，放到D盘下进行测试
@@ -34,16 +33,13 @@ public class ExcelTemplateImportTest extends BaseTest {
 	@Autowired
 	ExcelXmlImport excel;
 
-	@Autowired
-	CustLevelMapper mapper;
-
 	@Test
 	@Rollback(false)
 	public void test() {
 
-		//		excel.importExcel("D:\\excel_table.xml", "D:\\excel_table.xls");
+		//		excel.importExcel("D:\\excel_test.xml", "D:\\excel_test.xls");
 
-		//		excel.importExcel("D:\\excel_table.xml", "D:\\excel_table.csv");
+		//		excel.importExcel("D:\\excel_test.xml", "D:\\excel_test.csv");
 	}
 
 	@Test
@@ -53,14 +49,15 @@ public class ExcelTemplateImportTest extends BaseTest {
 		SAXReader reader = new SAXReader();
 		Document doc = null;
 		try {
-			doc = reader.read(new File("D:\\excel_table.xml"));
+			doc = reader.read(new File("D:\\excel_test.xml"));
 		} catch (DocumentException e) {
 			e.printStackTrace();
 		}
 
 		InputStream inStream = null;
 		try {
-			inStream = new FileInputStream("D:\\excel_table.xls");
+//			inStream = new FileInputStream("D:\\excel_test.xls");
+			inStream = new FileInputStream("D:\\excel_test.xlsx");
 		} catch (FileNotFoundException e) {
 			e.printStackTrace();
 		}
@@ -76,14 +73,14 @@ public class ExcelTemplateImportTest extends BaseTest {
 		SAXReader reader = new SAXReader();
 		Document doc = null;
 		try {
-			doc = reader.read(new File("D:\\excel_table.xml"));
+			doc = reader.read(new File("D:\\excel_test.xml"));
 		} catch (DocumentException e) {
 			e.printStackTrace();
 		}
 
 		InputStream inStream = null;
 		try {
-			inStream = new FileInputStream("D:\\excel_table.csv");
+			inStream = new FileInputStream("D:\\excel_test.csv");
 		} catch (FileNotFoundException e) {
 			e.printStackTrace();
 		}
