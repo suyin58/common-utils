@@ -1,0 +1,15 @@
+﻿customerId,levelId,levelName,modifyDatetime,holdAmount,remark,,,,,,
+X0000,2017,铜卡会员,2013,10000.23,备注,,,,,,
+maxHoldPrinciple,txDate,levelTempId,levelTempName,levelTempStartDate,levelTempEndDate,,,,,,
+11000.11,20140101,1,普通会员,20170818,20170818,,,,,,
+,,,,,,,,,,,
+,,,,,,,,,,,
+,,,,,,,,,,,
+,,,,,,,,,,,
+,,,,,,,,,,,
+customerId,levelId,levelName,modifyDatetime,holdAmount,remark,maxHoldPrinciple,txDate,levelTempId,levelTempName,levelTempStartDate,levelTempEndDate
+X0001,1,铜卡会员,1498622400000,10000.21,备注,11000.11,20140101,1,普通会员,20170818,20170818
+X0002,1,铜卡会员,1498622400000,10000.22,备注,11000.12,20140101,1,普通会员,20170818,20170818
+X0003,1,铜卡会员,1498622400000,10000.23,备注,11000.13,20140101,1,普通会员,20170818,20170818
+X0004,1,铜卡会员,1498622400000,10000.24,备注,11000.14,20140101,1,普通会员,20170818,20170818
+X0005,1,铜卡会员,1498622400000,10000.25,备注,11000.15,20140101,1,普通会员,20170818,20170818

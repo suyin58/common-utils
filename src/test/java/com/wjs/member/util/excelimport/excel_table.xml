@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tables>
+	<!--第一种模式.固定单元格:属性需要到确认的单元格中（col和row都不能为空）,sheetno 从0开始-->
+	<table type="cells" object="com.wjs.member.model.level.CustLevel" sheetno="0"
+	namespace="com.wjs.member.dao.level.CustLevelMapper" >
+		<!-- col、row 从0开始 -->
+		<property col="0" row="1" name="customerId" adapter="com.wjs.common.util.excel.xmlImport.type.ExcelStringAdapter"/>
+		<property col="1" row="1" name="levelId" adapter="com.wjs.common.util.excel.xmlImport.type.ExcelLongAdapter"/>
+		<property col="2" row="1" name="levelName" adapter="com.wjs.common.util.excel.xmlImport.type.ExcelStringAdapter"/>
+		<property col="3" row="1" name="modifyDatetime" adapter="com.wjs.common.util.excel.xmlImport.type.ExcelLongAdapter"/>
+		<property col="4" row="1" name="holdAmount" adapter="com.wjs.common.util.excel.xmlImport.type.ExcelBigDecimalAdapter"/>
+		<property col="5" row="1" name="remark" adapter="com.wjs.common.util.excel.xmlImport.type.ExcelStringAdapter"/>
+		<property col="0" row="3" name="maxHoldPrinciple" adapter="com.wjs.common.util.excel.xmlImport.type.ExcelBigDecimalAdapter"/>
+		<property col="1" row="3" name="txDate" adapter="com.wjs.common.util.excel.xmlImport.type.ExcelIntegerAdapter"/>
+		<property col="2" row="3" name="levelTempId" adapter="com.wjs.common.util.excel.xmlImport.type.ExcelLongAdapter"/>
+		<property col="3" row="3" name="levelTempName" adapter="com.wjs.common.util.excel.xmlImport.type.ExcelStringAdapter"/>
+		<property col="4" row="3" name="levelTempStartDate" adapter="com.wjs.common.util.excel.xmlImport.type.ExcelIntegerAdapter"/>
+		<property col="5" row="3" name="levelTempEndDate" adapter="com.wjs.common.util.excel.xmlImport.type.ExcelIntegerAdapter"/>
+	</table>
+
+	<!-- 第二种模式.行模式:按行读取，属性要到确认的类中（col不能为空，row为空）-->
+	<table type="rows" object="com.wjs.member.model.level.CustLevel" sheetno="0"
+	namespace="com.wjs.member.dao.level.CustLevelMapper"
+	start="10">
+		<!--primary字段，如果该字段读取为空，那么终止读取-->
+		<property col="0" name="customerId" primary="true" adapter="com.wjs.common.util.excel.xmlImport.type.ExcelStringAdapter"/>
+		<property col="1" name="levelId" adapter="com.wjs.common.util.excel.xmlImport.type.ExcelLongAdapter"/>
+		<property col="2" name="levelName" adapter="com.wjs.common.util.excel.xmlImport.type.ExcelStringAdapter"/>
+		<property col="3" name="modifyDatetime"  adapter="com.wjs.common.util.excel.xmlImport.type.ExcelLongAdapter"/>
+		<property col="4" name="holdAmount" adapter="com.wjs.common.util.excel.xmlImport.type.ExcelBigDecimalAdapter"/>
+		<property col="5" name="remark" adapter="com.wjs.common.util.excel.xmlImport.type.ExcelStringAdapter"/>
+		<property col="6" name="maxHoldPrinciple" adapter="com.wjs.common.util.excel.xmlImport.type.ExcelBigDecimalAdapter"/>
+		<property col="7" name="txDate"  adapter="com.wjs.common.util.excel.xmlImport.type.ExcelIntegerAdapter"/>
+		<property col="8" name="levelTempId" adapter="com.wjs.common.util.excel.xmlImport.type.ExcelLongAdapter"/>
+		<property col="9" name="levelTempName" adapter="com.wjs.common.util.excel.xmlImport.type.ExcelStringAdapter"/>
+		<property col="10" name="levelTempStartDate" adapter="com.wjs.common.util.excel.xmlImport.type.ExcelIntegerAdapter"/>
+		<property col="11" name="levelTempEndDate" adapter="com.wjs.common.util.excel.xmlImport.type.ExcelIntegerAdapter"/>
+	</table>
+
+</tables>
